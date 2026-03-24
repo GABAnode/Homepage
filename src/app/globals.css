@@ -131,9 +131,10 @@ a:hover, :focus-visible { color: var(--color-primary-hover); }
     grid-auto-rows: minmax(180px, auto);
     grid-template-areas:
       "logo logo what what"
-      "logo logo who  how "
-      "why  why  bio1 how "
-      "bio2 bio3 bio4 contact";
+      "logo logo who  when"
+      "why  why  where where"
+      "bio1 bio2 bio3 bio4"
+      "contact contact contact contact";
   }
 }
 .bento-tile { background: rgba(17, 24, 39, 0.4); border: 1px solid var(--color-glass-border); border-radius: var(--border-radius-lg); padding: var(--space-6); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); display: flex; flex-direction: column; justify-content: center; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease, border-color 0.3s ease; overflow: hidden; position: relative; }
@@ -144,7 +145,8 @@ a:hover, :focus-visible { color: var(--color-primary-hover); }
 .tile-logo { grid-area: logo; background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 58, 138, 0.4) 100%); align-items: center; text-align: center; }
 .tile-what { grid-area: what; }
 .tile-who { grid-area: who; }
-.tile-how { grid-area: how; }
+.tile-when { grid-area: when; }
+.tile-where { grid-area: where; }
 .tile-why { grid-area: why; }
 .tile-bio-1 { grid-area: bio1; }
 .tile-bio-2 { grid-area: bio2; }
@@ -158,8 +160,8 @@ a:hover, :focus-visible { color: var(--color-primary-hover); }
 
 .tile-bio { align-items: center; text-align: center; padding: var(--space-4); }
 .bio-initials { font-size: 2.5rem; font-weight: 800; color: #fff; opacity: 0.9; letter-spacing: -0.05em; margin-bottom: var(--space-2); }
-.bio-role { font-size: 0.8rem !important; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-primary) !important; }
-.btn-full { width: 100%; text-align: center; }
+.bio-desc { font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5; margin-top: var(--space-2); }
+.btn-full { width: 100%; max-width: 400px; text-align: center; }
 
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
