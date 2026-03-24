@@ -123,12 +123,14 @@ a:hover, :focus-visible { color: var(--color-primary-hover); }
 .section-subtitle { text-align: center; color: var(--color-text-secondary); margin-bottom: var(--space-8); font-size: 1.125rem; max-width: 600px; margin-inline: auto; }
 
 /* Bento Grid System */
-.bento-container { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: var(--space-4); margin: var(--space-8) auto; }
-.bento-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-4); width: 100%; max-width: 1200px; margin: 0 auto; }
+.bento-container { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: var(--space-3); margin: var(--space-4) auto; }
+.bento-grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: minmax(140px, auto); gap: var(--space-3); width: 100%; max-width: 1200px; margin: 0 auto; grid-template-areas: "logo logo" "what what" "who when" "why why" "where where" "bio1 bio2" "bio3 bio4" "contact contact"; }
 @media (min-width: 768px) {
+  .bento-container { margin: var(--space-8) auto; padding: var(--space-4); }
   .bento-grid {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(180px, auto);
+    gap: var(--space-4);
     grid-template-areas:
       "logo logo what what"
       "logo logo who  when"
