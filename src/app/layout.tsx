@@ -48,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <a href="#main-content" className="sr-only focus-visible:not-sr-only skip-link">
           Skip to main content
         </a>
