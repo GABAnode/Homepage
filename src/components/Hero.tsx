@@ -10,7 +10,7 @@ export default function Hero() {
             {' v2.0 Architecture Released'}
           </div>
           <h1 id="hero-title" className="hero-heading delay-2">
-            Precision Automation &<br />
+            Deterministic Automation &<br />
             <span className="text-gradient">System Architecture</span>
           </h1>
           <p className="hero-description delay-3">

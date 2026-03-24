@@ -86,7 +86,7 @@ a:hover, :focus-visible { color: var(--color-primary-hover); }
 .nav-brand { display: flex; align-items: center; gap: var(--space-2); font-weight: 700; font-size: 1.25rem; }
 .logo-orb { width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary), var(--color-success)); animation: pulseGlow 3s infinite; }
 .nav-links { display: flex; gap: var(--space-4); list-style: none; align-items: center; margin: 0; padding: 0; }
-.btn { display: inline-block; padding: var(--space-3) var(--space-6); border-radius: 30px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; text-align: center; border: 1px solid transparent; }
+.btn { display: inline-block; padding: var(--space-3) var(--space-6); border-radius: 30px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; text-align: center; border: 1px solid transparent; color: var(--color-text-primary); }
 .btn-primary { background: linear-gradient(135deg, var(--color-primary), #2563eb); color: #fff; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4); }
 .btn-primary:hover { background: linear-gradient(135deg, #2563eb, #1d4ed8); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5); color: #fff; text-decoration: none; }
 .btn-secondary { background: rgba(255, 255, 255, 0.05); color: var(--color-text-primary); border-color: var(--color-glass-border); backdrop-filter: blur(10px); }
