@@ -45,14 +45,14 @@ export default function BentoGrid() {
         </section>
 
         {/* Bios */}
-        <article className="bento-tile tile-bio tile-bio-1 animate-fade-up" style={{ animationDelay: '0.7s' }} aria-label="Founder JF">
-          <div className="bio-initials">JF</div>
-          <p className="bio-desc">Designs system architecture and ensures accessibility, compliance, and real-world execution align.</p>
-        </article>
-        
-        <article className="bento-tile tile-bio tile-bio-2 animate-fade-up" style={{ animationDelay: '0.8s' }} aria-label="Founder KM">
+        <article className="bento-tile tile-bio tile-bio-1 animate-fade-up" style={{ animationDelay: '0.7s' }} aria-label="Founder KM">
           <div className="bio-initials">KM</div>
           <p className="bio-desc">Coordinates operations and maintains alignment across systems, timelines, and execution.</p>
+        </article>
+        
+        <article className="bento-tile tile-bio tile-bio-2 animate-fade-up" style={{ animationDelay: '0.8s' }} aria-label="Founder JF">
+          <div className="bio-initials">JF</div>
+          <p className="bio-desc">Designs system architecture and ensures accessibility, compliance, and real-world execution align.</p>
         </article>
         
         <article className="bento-tile tile-bio tile-bio-3 animate-fade-up" style={{ animationDelay: '0.9s' }} aria-label="Founder AC">
