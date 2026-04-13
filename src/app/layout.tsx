@@ -5,14 +5,14 @@ import AxeProvider from "@/components/AxeProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gabanodelabs.com"),
+  metadataBase: new URL("https://gabanodelab.com"),
   title: "GABAnode Labs | Infrastructure for Accessibility & Compliance",
   description: "GABAnode Labs is a systems-focused lab building infrastructure for accessibility, compliance, and intelligent automation across digital environments to bring structure to complexity.",
   keywords: ["GABAnode Labs", "System Architecture", "Automation", "Pipeline", "Data Engineering", "GEO Implementation"],
   openGraph: {
     title: "GABAnode Labs | Systems-Focused Infrastructure",
     description: "GABAnode Labs is a systems-focused lab building infrastructure for accessibility, compliance, and intelligent automation.",
-    url: "https://gabanodelabs.com",
+    url: "https://gabanodelab.com",
     siteName: "GABAnode Labs",
     images: [
       {
