@@ -226,11 +226,11 @@ a:hover { color: var(--color-primary-hover); }
   transform: rotateY(-8deg) rotateX(4deg); transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
   border-radius: var(--radius-xl); padding: 6px; max-width: 460px; width: 100%;
-  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px); animation: float 7s ease-in-out infinite;
+  background: transparent; border: none;
+  animation: float 7s ease-in-out infinite;
 }
 .hero-card:hover { transform: rotateY(0deg) rotateX(0deg); }
-.hero-card img { width: 100%; border-radius: 20px; display: block; object-fit: cover; }
+.hero-card img { width: 100%; border-radius: 0; display: block; object-fit: contain; }
 .floating-badge {
   position: absolute; z-index: 3;
   display: flex; align-items: center; gap: 8px;

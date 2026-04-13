@@ -172,7 +172,7 @@ export default function HomePage() {
               <div className="hero-glow" />
               <div className="hero-card">
                 <img
-                  src="/images/gn-logo.jpeg"
+                  src="/images/gn-logo-transparent.png"
                   alt=""
                   width="460"
                   height="340"
