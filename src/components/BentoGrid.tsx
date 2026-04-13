@@ -67,20 +67,32 @@ const GN_WAY = [
 
 const TEAM = [
   {
-    initials: 'KM', role: 'Operations Lead',
-    desc: 'Coordinates operations and maintains alignment across systems, timelines, and execution.',
+    initials: 'K.M.',
+    title: 'Chief Accessibility Officer',
+    creds: ['CPACC', 'ADA-C'],
+    desc: 'Former ADA/Web Accessibility Coordinator for the City of Colorado Springs and Equity Manager for Statewide Accessibility at the State of Colorado, where he oversaw HB 21-1110 digital compliance policy across Colorado government. Board member, National ADA Committee (Rocky Mountain Region).',
+    accolade: 'Recognized by the U.S. Department of Justice, the National ADA Network, and the Centers for Independent Living.',
   },
   {
-    initials: 'JF', role: 'Systems Architect',
-    desc: 'Designs system architecture and ensures accessibility, compliance, and real-world execution align.',
+    initials: 'C.L.',
+    title: 'Chief Development Officer',
+    creds: ['AZ-900', 'PL-900'],
+    desc: 'Full-lifecycle platform engineer specializing in Azure cloud infrastructure, Microsoft Power Platform, and AI-integrated systems. Shipped four commercial products to market in 2025 via Azure Marketplace and Power Platform Marketplace. Prior roles include TruNorth Dynamics, Traxen AI, and Deep Planet Research.',
+    accolade: 'Architect of the cloud infrastructure underpinning GABAnode\'s remediation and pipeline systems.',
   },
   {
-    initials: 'AC', role: 'UX & Clarity Lead',
-    desc: 'Shapes how systems are experienced — ensuring clarity, usability, and coherence at every touchpoint.',
+    initials: 'J.F.',
+    title: 'Chief Security Officer',
+    creds: ['W3C Invited Expert', 'OWASP'],
+    desc: 'Invited Expert to the W3C, contributing to the development of WCAG 3.0. Doctoral candidate in Computer Science researching Compliance Trap mitigation and secure service delivery in smart-city environments. MSIT and military veteran with 20+ years of operational leadership.',
+    accolade: 'Recognized by the City of Colorado Springs and the State of Colorado for work at the intersection of cybersecurity and accessibility.',
   },
   {
-    initials: 'CL', role: 'Compliance & QA',
-    desc: 'Validates system integrity, ensuring accuracy, compliance, and performance under real conditions.',
+    initials: 'Dr. A.C.',
+    title: 'Client Advocate',
+    creds: ['Clinical Background'],
+    desc: 'Brings lived-experience and patient-advocacy perspective to accessible service delivery, grounded in clinical understanding of disability, communication access, and effective accommodation. Bridges the gap between technical compliance outputs and real-world resident impact.',
+    accolade: 'Ensures GABAnode\'s systems serve the humans they are designed for — not just the regulators who audit them.',
   },
 ];
 
@@ -322,26 +334,38 @@ export default function HomePage() {
           <div className="section-header">
             <span className="section-label">The Lab</span>
             <h2 id="team-heading" className="section-title">
-              Built by People Who Know<br />How the Systems Get Audited
+              Practitioners Who Have Operated<br />Inside the Systems We Build For
             </h2>
             <p className="section-subtitle">
-              Architects, operators, and compliance specialists who have worked inside
-              the environments regulators examine — not just studied them from the outside.
+              Former government accessibility coordinators, W3C contributors, cloud platform
+              engineers, and patient advocates — combined under one infrastructure lab.
             </p>
           </div>
 
           <div className="team-grid">
-            {TEAM.map(m => (
+            {TEAM.map((m, i) => (
               <article
                 key={m.initials}
                 className="bio-card animate-fade-up"
-                aria-label={`${m.initials}, ${m.role}`}
+                style={{ animationDelay: `${0.1 + i * 0.1}s` }}
+                aria-labelledby={`bio-${i}-title`}
               >
-                <div className="bio-initials-wrap">
-                  <span className="bio-initials" aria-hidden="true">{m.initials}</span>
+                <div className="bio-card-top">
+                  <div className="bio-initials-wrap">
+                    <span className="bio-initials" aria-hidden="true">{m.initials}</span>
+                  </div>
+                  <div className="bio-creds" aria-label={`Credentials: ${m.creds.join(', ')}`}>
+                    {m.creds.map(c => (
+                      <span key={c} className="bio-cred-tag">{c}</span>
+                    ))}
+                  </div>
                 </div>
-                <p className="bio-role">{m.role}</p>
+                <p id={`bio-${i}-title`} className="bio-role">{m.title}</p>
                 <p className="bio-desc">{m.desc}</p>
+                <p className="bio-accolade" aria-label="Recognition">
+                  <span className="bio-accolade-icon" aria-hidden="true">◆</span>
+                  {m.accolade}
+                </p>
               </article>
             ))}
           </div>
