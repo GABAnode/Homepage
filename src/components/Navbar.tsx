@@ -4,21 +4,22 @@ export default function Navbar() {
   return (
     <header className="navbar glass-panel">
       <div className="container nav-content">
-        <a href="/" className="nav-brand" aria-label="GABAnode Labs — Home">
+        <a href="/" className="nav-brand" aria-label="GABAnode Lab — Home">
           <div className="logo-orb" aria-hidden="true" />
-          <span>GABAnode Labs</span>
+          <span>GABAnode Lab</span>
         </a>
 
         <nav aria-label="Main Navigation">
           <ul className="nav-links">
             <li><a href="#pillars">Platform</a></li>
             <li><a href="#how-it-works">Solutions</a></li>
+            <li><a href="/blog">Blog</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li>
               <a
                 href="mailto:systems@gabanodelab.com"
                 className="btn btn-primary btn-sm"
-                aria-label="Request access to GABAnode Labs"
+                aria-label="Request access to GABAnode Lab"
               >
                 Request Access
               </a>

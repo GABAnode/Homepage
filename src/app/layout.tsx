@@ -6,20 +6,20 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gabanodelab.com"),
-  title: "GABAnode Labs | Infrastructure for Accessibility & Compliance",
-  description: "GABAnode Labs is a systems-focused lab building infrastructure for accessibility, compliance, and intelligent automation across digital environments to bring structure to complexity.",
-  keywords: ["GABAnode Labs", "System Architecture", "Automation", "Pipeline", "Data Engineering", "GEO Implementation"],
+  title: "GABAnode Lab | Infrastructure for Accessibility & Compliance",
+  description: "GABAnode Lab is a systems-focused lab building infrastructure for accessibility, compliance, and intelligent automation across digital environments to bring structure to complexity.",
+  keywords: ["GABAnode Lab", "System Architecture", "Automation", "Pipeline", "Data Engineering", "GEO Implementation"],
   openGraph: {
-    title: "GABAnode Labs | Systems-Focused Infrastructure",
-    description: "GABAnode Labs is a systems-focused lab building infrastructure for accessibility, compliance, and intelligent automation.",
+    title: "GABAnode Lab | Systems-Focused Infrastructure",
+    description: "GABAnode Lab is a systems-focused lab building infrastructure for accessibility, compliance, and intelligent automation.",
     url: "https://gabanodelab.com",
-    siteName: "GABAnode Labs",
+    siteName: "GABAnode Lab",
     images: [
       {
         url: "/images/media__1774335722556.jpg",
         width: 1200,
         height: 630,
-        alt: "GABAnode Labs System Architecture",
+        alt: "GABAnode Lab System Architecture",
       },
     ],
     locale: "en_US",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GABAnode Labs",
+    title: "GABAnode Lab",
     description: "System-focused automation pipelines.",
     images: ["/images/media__1774335722556.jpg"],
   },
